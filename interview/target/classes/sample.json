@@ -1,0 +1,15 @@
+{
+  "name": "Foobar",
+  "age": 28,
+  "position": [
+    "SWE",
+    "Architect",
+    "Designer"
+  ],
+  "skills": [
+    "java",
+    "python",
+    "ruby",
+    "kotlin"
+  ]
+}
