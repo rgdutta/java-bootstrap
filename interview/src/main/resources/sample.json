@@ -1,4 +1,4 @@
-{
+[{
   "name": "Foobar",
   "age": 28,
   "position": [
@@ -13,3 +13,4 @@
     "kotlin"
   ]
 }
+]

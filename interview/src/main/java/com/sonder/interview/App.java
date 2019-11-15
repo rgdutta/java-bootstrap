@@ -4,6 +4,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.Arrays;
+import java.util.List;
+import java.lang.reflect.Type;
+import com.google.gson.reflect.TypeToken;
 
 import com.google.gson.Gson;
 
@@ -15,7 +18,8 @@ public class App {
         try (Reader reader = new FileReader("/Users/sonder/eclipse-workspace/interview/src/main/resources/sample.json")) {
 
             // Convert JSON File to Java Object
-            Sample sample = gson.fromJson(reader, Sample.class);
+        	Type listType = new TypeToken<List<Sample>>() {}.getType();
+            List<Sample> sample = gson.fromJson(reader, listType);
 			
 			// print sample 
             System.out.println(sample);
